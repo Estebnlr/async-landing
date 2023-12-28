@@ -1,4 +1,4 @@
-const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCmngKdHI41_dHy2FpMS5j-Q&part=snippet%2Cid&order=date&maxResults=9';
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCmngKdHI41_dHy2FpMS5j-Q&part=snippet%2Cid&order=date&maxResults=12';
 
 const content = null || document.getElementById('content');
 
@@ -37,7 +37,7 @@ async function fetchData(urlApi) { //siempre async antes de function
                             </h3>
                         </div>
                     </div></a>
-                `).slice(0, 8).join('')}
+                `).slice(0, 12).join('')}
                 `;
                 content.innerHTML = view;//innerHTML es igual a la vista que se ha creado e itera con el metodo map y devuelve un nuevo arreglo con los elementos que queremos obtener como el título, la descripción, la imagen miniatura de la API
             } catch (error){
